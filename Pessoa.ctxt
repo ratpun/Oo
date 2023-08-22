@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Pessoa
+comment1.params=altura
+comment1.target=void\ setAltura(double)
+comment2.params=peso
+comment2.target=void\ setPeso(double)
+comment3.params=sexo
+comment3.target=void\ setSexo(char)
+comment4.params=
+comment4.target=void\ CalculaImc()
+comment5.params=
+comment5.target=java.lang.String\ getResultadoImc()
+numComments=6
