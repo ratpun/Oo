@@ -1,16 +1,21 @@
 
-public class Usuario
+public class Carro
 {
-    private double quilowatts;
-    
-    public void setQuilowatts(double quilowatts)
+    private double kmrodados;
+    private double combustivelconsumido;
+
+    public void setKmRodados(double kmrodados)
     {
-        this.quilowatts = quilowatts;
+       this.kmrodados = kmrodados;
     }
     
-    public double CalculaEnergiaEletrica()
+    public void setCombustivelConsumido(double combustivelconsumido)
     {
-        this.quilowatts = quilowatts * 0.12;
-        return quilowatts + (quilowatts * 18/100);
+       this.combustivelconsumido = combustivelconsumido;
+    }
+    
+    public double CalculaMedia()
+    {
+       return kmrodados/combustivelconsumido;
     }
 }
