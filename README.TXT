@@ -1,113 +1,12 @@
-public class Aluno
-{
-    private int matricula;
-    private String nome;
-    private String nascimento;
-    private float ira;
-    private int cpf;
-    private String cidade;
-    private boolean graduado;
-    private String estado; 
-    private String logradouro;
-    private int telefone;
+----------------------------------------------------------------------------
+Este é o arquivo README do projeto. Você deve descrever aqui o seu projeto.
+Informe ao usuário (alguém que não sabe nada sobre este projeto!) tudo que
+ele/ela precisa saber. Os comentários devem incluir, pelo menos:
+------------------------------------------------------------------------
 
-    public void setMatricula(int matricula)
-    {
-        this.matricula = matricula;
-    }
-    
-    public int getMatricula()
-    {
-        return this.matricula;
-    }
-    
-    public void setNome(String nome)
-    {
-        this.nome = nome;
-    }
-    
-    public String getNome()
-    {
-        return this.nome;
-    }
-    
-    public void setNascimento(String nascimento)
-    {
-        this.nascimento = nascimento;
-    }
-    
-    public String getNascimento()
-    {
-        return this.nascimento;
-    }
-    
-    public void setIra(float ira)
-    {
-        this.ira = ira;
-    }
-    
-    public float getIra()
-    {
-        return this.ira;
-    }
-    
-    public void setCpf(int cpf)
-    {
-        this.cpf = cpf;
-    }
-    
-    public int getCpf()
-    {
-        return this.cpf;
-    }
-    
-    public void setCidade(String cidade)
-    {
-        this.cidade = cidade;
-    }
-    
-    public String getCidade()
-    {
-        return this.cidade;
-    }
-    
-    public void setGraduado(Boolean graduado)
-    {
-        this.graduado = graduado;
-    }
-    
-    public boolean getGraduado()
-    {
-        return this.graduado;
-    }
-    
-    public void setEstado(String estado)
-    {
-        this.estado = estado;
-    }
-    
-    public String getEstado()
-    {
-        return this.estado;
-    }
-    
-    public void setLogradouro(String logradouro)
-    {
-        this.logradouro = logradouro;
-    }
-    
-    public String getLogradouro()
-    {
-        return this.logradouro;
-    }
-    
-    public void setTelefone(int telefone)
-    {
-        this.telefone = telefone;
-    }
-    
-    public int getTelefone()
-    {
-        return this.telefone;
-    }
-}
+TÍTULO DO PROJETO:
+OBJETIVO DO PROJETO:
+VERSÃO ou DATA:
+COMO INICIAR O PROJETO:
+AUTORES:
+INSTRUÇÕES PARA O USUÁRIO:

@@ -1,33 +1,26 @@
+
 public class Funcionario
 {
+    private double salariobruto;
+    private double valorhrextra;
+    private int numerodehrextra;
+    private double salarioliquido;
     
-    private double salariotual;
-    private double aumento;
-    private double novosalario;
-
-    public void setSalario(double salariotual)
+    public void setSalarioBruto(double salariobruto)
     {
-        this.salariotual = salariotual;
+        this.salariobruto = salariobruto;
     }
     
-    public double getSalario()
+    public void HorasExtras(double valorhrextra, int numerodehrextra)
     {
-        return this.salariotual;
+        this.valorhrextra = valorhrextra;
+        this.numerodehrextra = numerodehrextra;
     }
     
-    public void setAumento(double aumento)
+    public double CalcularSalarioLiquido()
     {
-        this.aumento = salariotual * (aumento/100);
+        this.salarioliquido = salariobruto + (valorhrextra * numerodehrextra);
+        this.salarioliquido = salarioliquido - (salarioliquido * 8/100);
+        return this.salarioliquido;
     }
-    
-    public double getAumento()
-    {
-        return this.aumento;
-    }
-    
-    public double CalculaNovoSalario()
-    {
-        return salariotual + aumento;
-    }
-    
 }

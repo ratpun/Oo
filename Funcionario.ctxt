@@ -1,13 +1,9 @@
 #BlueJ class context
 comment0.target=Funcionario
-comment1.params=salariotual
-comment1.target=void\ setSalario(double)
-comment2.params=
-comment2.target=double\ getSalario()
-comment3.params=aumento
-comment3.target=void\ setAumento(double)
-comment4.params=
-comment4.target=double\ getAumento()
-comment5.params=
-comment5.target=double\ CalculaNovoSalario()
-numComments=6
+comment1.params=salariobruto
+comment1.target=void\ setSalarioBruto(double)
+comment2.params=valorhrextra\ numerodehrextra
+comment2.target=void\ HorasExtras(double,\ int)
+comment3.params=
+comment3.target=double\ CalcularSalarioLiquido()
+numComments=4
