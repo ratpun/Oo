@@ -1,0 +1,33 @@
+public class Funcionario
+{
+    
+    private double salariotual;
+    private double aumento;
+    private double novosalario;
+
+    public void setSalario(double salariotual)
+    {
+        this.salariotual = salariotual;
+    }
+    
+    public double getSalario()
+    {
+        return this.salariotual;
+    }
+    
+    public void setAumento(double aumento)
+    {
+        this.aumento = salariotual * (aumento/100);
+    }
+    
+    public double getAumento()
+    {
+        return this.aumento;
+    }
+    
+    public double CalculaNovoSalario()
+    {
+        return salariotual + aumento;
+    }
+    
+}
