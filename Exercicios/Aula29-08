@@ -1,0 +1,98 @@
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+
+public class PessoaTest
+{
+    @Test
+    public void testeDeveRetornarMasculinoBaixoPeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("masculino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(20.6f);
+        assertEquals("abaixo do peso", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarMasculinoPesoNormal(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("masculino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(26.3f);
+        assertEquals("peso normal", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarMasculinoMarginalmenteAcimaDoPeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("masculino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(27.7f);
+        assertEquals("marginalmente acima do peso", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarMasculinoAcimaDoPeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("masculino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(31.0f);
+        assertEquals("acima do peso", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarMasculinoObeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("masculino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(31.1f);
+        assertEquals("obeso", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarFemininoAbaixoDoPeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("feminino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(19.0f);
+        assertEquals("abaixo do peso", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarFemininoPesoNormal(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("feminino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(25.7f);
+        assertEquals("peso normal", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarFemininoPesoMarginalmenteAcimaDoPeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("feminino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(27.2f);
+        assertEquals("marginalmente acima do peso", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarFemininoAcimaDoPeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("feminino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(32.2f);
+        assertEquals("acima do peso", pessoa.getCondicao());
+    }
+    
+    @Test
+    public void testeDeveRetornarFemininoObeso(){
+        Pessoa pessoa = new Pessoa();
+        pessoa.setSexo("feminino");
+        pessoa.setAltura(1.0f);
+        pessoa.setPeso(32.3f);
+        assertEquals("obeso", pessoa.getCondicao());
+    }
+}
