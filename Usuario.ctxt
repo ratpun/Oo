@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Usuario
-comment1.params=kmrodados
-comment1.target=void\ setKmRodados(double)
-comment2.params=combustivelconsumido
-comment2.target=void\ setCombustivelConsumido(double)
-comment3.params=
-comment3.target=double\ CalculaMedia()
-numComments=4
