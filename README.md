@@ -1,4 +1,4 @@
-O repositório contem exercicios feitos em java, a partir do conceito de orientação a objetos.
+## O repositório contem exercicios feitos em java, a partir do conceito de orientação a objetos.
 
 A pasta "EXERCICIOS" contém exercicios que foram feitos em casa, a partir de enunciados na internet ou requisitos para programa.
 
